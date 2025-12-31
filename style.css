@@ -16,13 +16,22 @@ body {
     padding: 0 2rem;    
 }
 
+
+section {
+    min-height: 100vh;
+    padding: 80px 0;
+}
+
+
 /* navbar start */
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
     padding: 10px 0;  
+  
 }
 
 .logo a {
@@ -40,6 +49,7 @@ body {
     background-color: #14525cc7;
     border-radius: 30px;
     padding: 9px 20px;
+    
 }
 
 .menu li a {
@@ -49,12 +59,6 @@ body {
     font-weight: 500;
 }
 
-.menu li a.homebtn {
-    color: #e5e5e5;
-    border-radius: 30px;
-    /* background-color: rgba(127, 255, 212, 0.603); */
-    padding: 6px 20px;
-}
 
 .contactbtn {
     text-decoration: none;
@@ -189,6 +193,127 @@ body {
 /* intro end */
 
 
-/* skill start */
+
+
+
+
+/* ===== SKILLS SECTION ===== */
+
+.skill {
+    padding: 100px 0;
+}
+
+.headskill {
+    text-align: center;
+    color: #93B1B5;
+    font-weight: 800;
+    margin-bottom: 70px;
+}
+
+/* card wrapper */
+.skill-card {
+    text-align: center;
+}
+
+/* glowing ring */
+.skill-ring {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* glow */
+.skill-ring::before {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    border-radius: 50%;
+    filter: blur(14px);
+    opacity: 0.75;
+    z-index: -1;
+}
+
+/* icon */
+.skill-ring img {
+    width: 65px;
+    height: auto;
+}
+
+/* skill name */
+.skill-name {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #cfdede;
+}
+
+/* ===== INDIVIDUAL COLORS ===== */
+
+/* Figma */
+.figma { border: 2px solid #a259ff; }
+.figma::before { background: #a259ff; }
+
+/* Power Apps */
+.powerapps { border: 2px solid #742774; }
+.powerapps::before { background: #742774; }
+
+/* HTML */
+.html { border: 2px solid #f06529; }
+.html::before { background: #f06529; }
+
+/* CSS */
+.css { border: 2px solid #2965f1; }
+.css::before { background: #2965f1; }
+
+/* Bootstrap */
+.bootstrap { border: 2px solid #7952b3; }
+.bootstrap::before { background: #7952b3; }
+
+/* Tailwind */
+.tailwind { border: 2px solid #38bdf8; }
+.tailwind::before { background: #38bdf8; }
+
+/* JavaScript */
+.javascript { border: 2px solid #f7df1e; }
+.javascript::before { background: #f7df1e; }
+
+/* React */
+.react { border: 2px solid #61dafb; }
+.react::before { background: #61dafb; }
+
+/* PHP */
+.php { border: 2px solid #8993be; }
+.php::before { background: #8993be; }
+
+/* Laravel */
+.laravel { border: 2px solid #ff2d20; }
+.laravel::before { background: #ff2d20; }
+
+/* MySQL */
+.mysql { border: 2px solid #00758f; }
+.mysql::before { background: #00758f; }
+
+/* Python */
+.python { border: 2px solid #ffd43b; }
+.python::before { background: #ffd43b; }
 
 /* skill end */
+
+
+
+/* experience start */
+
+.card{
+    width: 550px;
+    height: 300px;
+   
+}
+
+
+
+
+/* experience end */
