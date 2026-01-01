@@ -22,6 +22,14 @@ section {
     padding: 80px 0;
 }
 
+.heads {
+    text-align: center;
+    color: #93B1B5;
+    font-weight: 800;
+    margin-bottom: 70px;
+}
+
+
 
 /* navbar start */
 
@@ -194,21 +202,13 @@ section {
 
 
 
-
-
-
 /* ===== SKILLS SECTION ===== */
 
 .skill {
     padding: 100px 0;
 }
 
-.headskill {
-    text-align: center;
-    color: #93B1B5;
-    font-weight: 800;
-    margin-bottom: 70px;
-}
+
 
 /* card wrapper */
 .skill-card {
@@ -325,17 +325,138 @@ section {
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 5rem;
+gap: 135px;
 }
 
 .exp-block{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 10px;
+    background-color: #00758f;
+    border-radius: 100px 10px 10px 100px;
+    padding: 10px 15px;
 }
 
 .text{
-    
+ text-align: center;
+ line-height: 1.1;
+
 }
+
+.text p{
+    margin: 0;
+}
+.clock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock i{
+    font-size: 20px;
+    color: #61dafb;
+}
+
 /* experience end */
+
+
+/* education start */
+
+.edu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+}
+
+.edubox{
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(270deg, #165C66 0%, #0B2E33 43.27%, #218A99 98.08%);
+    border: 2px solid #3699A7;
+
+    /* OCTAGON SHAPE */
+    clip-path: polygon(
+        15% 0%,
+        85% 0%,
+        100% 15%,
+        100% 85%,
+        85% 100%,
+        15% 100%,
+        0% 85%,
+        0% 15%
+    );
+
+    padding: 20px 50px;
+}
+
+
+.edubox i{
+    font-size: 30px;
+
+}
+.eduinfo h3{
+    color: #4F7C82;
+    text-align: center;
+    font-weight: 400;
+}
+
+.eduinfo h5{
+    color: #4F7C82;
+    text-align: center;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.edudist{
+    color: #abdee5;
+    text-align: center;
+    font-weight: 400;
+    background: linear-gradient(289.44deg, #4F7C82 0.42%, rgba(11, 46, 51, 0.84) 46.57%, #93B1B5 89.37%);
+    border-radius: 14px;
+    padding: 0px 20px;
+}
+
+.bordered{
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    width: 410px;  
+    text-align: center;
+}
+
+
+.edu1,
+.edu2,
+.edu3{
+    width: 300px;          /* same width */
+    min-height: 300px;     /* same height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* balances spacing */
+}
+
+/* education end */
+
+
+/* projects start */
+
+/* .projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.proj{
+    border: 1px solid whitesmoke;
+    background-color: #00758f;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;  centers card inside column
+}
+
+
+
+/* projects end */
