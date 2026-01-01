@@ -307,13 +307,35 @@ section {
 
 /* experience start */
 
-.card{
-    width: 550px;
-    height: 300px;
-   
+.experience-section{
+    place-items: center;
+
 }
 
+.card{
+    width: 550px;
+    height: 250px;
+    box-shadow: 10px 10px 10px;
+    background-color: #9daeb1;
+    border:1px solid white;
+    padding: 50px 60px;
+}
 
+.experienced{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 5rem;
+}
 
+.exp-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
 
+.text{
+    
+}
 /* experience end */
