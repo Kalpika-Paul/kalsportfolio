@@ -6,7 +6,7 @@ body {
 
 .main {
     background-color: #0B2E33;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 
@@ -19,14 +19,14 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
 .heads {
     text-align: center;
     color: #93B1B5;
     font-weight: 800;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 
@@ -93,8 +93,16 @@ section {
 /* navbar end */
 
 /* intro start */
-.header {
-    padding: 20px 0;
+.header{
+
+        min-height: calc(100vh - 80px); /* 80px ≈ navbar height */
+        display: flex;
+        align-items: center;
+ 
+}
+
+.header .row{
+    width: 100%;
 }
 
 .headline {
@@ -205,7 +213,12 @@ section {
 /* ===== SKILLS SECTION ===== */
 
 .skill {
-    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical centering */
+    align-items: center;     /* horizontal centering */
+    min-height: 100vh;
+    padding: 50px 0;         /* optional spacing */
 }
 
 
@@ -365,32 +378,56 @@ section {
 
 
 
-/* experience start */
+/* ===== EXPERIENCE START ===== */
 
-.experience-section {
-    place-items: center;
-
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical centering */
+    align-items: center;     /* horizontal centering */
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 40px;               /* space between heading and cards */
 }
 
+/* Cards container */
+.experience-section {
+    display: flex;
+    flex-direction: column;  /* stack cards vertically */
+    align-items: center;     /* center horizontally */
+    gap: 30px;               /* space between cards */
+    width: 100%;
+}
+
+/* Individual cards */
 .card {
     width: 550px;
+    max-width: 100%;         /* responsive */
     height: 250px;
     border: 1px solid white;
-    background: rgba(25, 98, 109, 0.3);
+    background: #19626D;
     mix-blend-mode: hard-light;
     box-shadow: 0px 40px 100px #121414;
     border-radius: 17px;
     box-sizing: border-box;
     padding: 50px 60px;
+    display: flex;
+    flex-direction: column;  /* title on top, content below */
+    justify-content: center; /* vertical alignment inside card */
+    gap: 20px;               /* spacing between title and content */
 }
 
+/* Flex wrapper inside each card */
 .experienced {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 135px;
+    gap: 130px;              /* spacing between company info and exp-block */
+    flex-wrap: wrap;         /* wrap on smaller screens */
 }
 
+/* Experience block (time + icon) */
 .exp-block {
     display: flex;
     align-items: center;
@@ -402,16 +439,17 @@ section {
     padding: 10px 15px;
 }
 
+/* Text inside exp-block */
 .text {
     text-align: center;
     line-height: 1.1;
-
 }
 
 .text p {
     margin: 0;
 }
 
+/* Clock icon */
 .clock {
     display: flex;
     align-items: center;
@@ -421,6 +459,19 @@ section {
 .clock i {
     font-size: 20px;
     color: #61dafb;
+}
+
+/* Responsive tweaks */
+@media (max-width: 650px) {
+    .experienced {
+        flex-direction: column;
+        gap: 20px;               /* reduce gap on small screens */
+    }
+
+    .card {
+        padding: 30px 20px;
+        height: auto;            /* flexible height */
+    }
 }
 
 /* experience end */
@@ -558,3 +609,43 @@ section {
 
 
 /* projects end */
+
+
+/* 
+contact start */
+
+/* CONTACT SECTION */
+
+.contacted{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #e9fbfd;
+}
+
+.contact-list{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 18px;
+}
+
+
+.contact-item i{
+    font-size: 22px;
+    color: #c9f3f6;
+    opacity: 0.9;
+}
+
+
+
+/* 
+contact end */
