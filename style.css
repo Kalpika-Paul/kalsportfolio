@@ -210,8 +210,9 @@ section {
 
 
 
-/* ===== SKILLS SECTION ===== */
+/* ===== SKILLS SECTION(Technology stack) ===== */
 
+/* skill start */
 .skill {
     display: flex;
     flex-direction: column;
@@ -253,7 +254,7 @@ section {
 
 /* icon */
 .skill-ring img {
-    width: 65px;
+    width: 115px;
     height: auto;
 }
 
@@ -268,11 +269,17 @@ section {
 
 /* Figma */
 .figma {
-    border: 2px solid #a259ff;
+    position: relative;
+    border: 2px solid #a259ff; /* keep your original border */
 }
 
 .figma::before {
-    background: #a259ff;
+    content: "";
+    position: absolute;
+    inset: -2px;              /* same as border width */
+    border: 2px solid #a259ff;
+    filter: blur(6px);        /* blur ONLY the border */
+    pointer-events: none;
 }
 
 /* Power Apps */
@@ -281,7 +288,7 @@ section {
 }
 
 .powerapps::before {
-    background: #742774;
+    background: #74277400;
 }
 
 /* HTML */
@@ -290,7 +297,7 @@ section {
 }
 
 .html::before {
-    background: #f06529;
+    background: #f0652900;
 }
 
 /* CSS */
@@ -299,7 +306,7 @@ section {
 }
 
 .css::before {
-    background: #2965f1;
+    background: #2965f100;
 }
 
 /* Bootstrap */
@@ -308,7 +315,7 @@ section {
 }
 
 .bootstrap::before {
-    background: #7952b3;
+    background: #7952b300;
 }
 
 /* Tailwind */
@@ -317,7 +324,7 @@ section {
 }
 
 .tailwind::before {
-    background: #38bdf8;
+    background: #38bff800;
 }
 
 /* JavaScript */
@@ -326,7 +333,7 @@ section {
 }
 
 .javascript::before {
-    background: #f7df1e;
+    background: #f7de1e00;
 }
 
 /* React */
@@ -335,7 +342,7 @@ section {
 }
 
 .react::before {
-    background: #61dafb;
+    background: #61dafb00;
 }
 
 /* PHP */
@@ -344,7 +351,7 @@ section {
 }
 
 .php::before {
-    background: #8993be;
+    background: #8993be00;
 }
 
 /* Laravel */
@@ -353,7 +360,7 @@ section {
 }
 
 .laravel::before {
-    background: #ff2d20;
+    background: #ff2b2000;
 }
 
 /* MySQL */
@@ -362,7 +369,7 @@ section {
 }
 
 .mysql::before {
-    background: #00758f;
+    background: #00758f00;
 }
 
 /* Python */
@@ -371,7 +378,7 @@ section {
 }
 
 .python::before {
-    background: #ffd43b;
+    background: #ffd53b00;
 }
 
 /* skill end */
@@ -566,19 +573,18 @@ section {
     background: linear-gradient(224.68deg, #4F7C82 0.91%, #073136 100%);
     border: 1px solid #B8E3E9;
     border-radius: 10px;
-    width: 274px;
-    height: 280px;
+    width:360px;
+    height: 290px;
     left: 928px;
     top: 3238px;
     margin: 0 auto;
-    /* centers card inside column */
     padding: 15px;
 
 }
 
 .pimg img {
-    width: 245px;
-    height: 136px;
+    width: 330px;
+    height: 145px;
     left: 948px;
     top: 3253px;
     display: flex;
