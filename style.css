@@ -93,15 +93,16 @@ section {
 /* navbar end */
 
 /* intro start */
-.header{
+.header {
 
-        min-height: calc(100vh - 80px); /* 80px ≈ navbar height */
-        display: flex;
-        align-items: center;
- 
+    min-height: calc(100vh - 80px);
+    /* 80px ≈ navbar height */
+    display: flex;
+    align-items: center;
+
 }
 
-.header .row{
+.header .row {
     width: 100%;
 }
 
@@ -216,10 +217,13 @@ section {
 .skill {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* vertical centering */
-    align-items: center;     /* horizontal centering */
+    justify-content: center;
+    /* vertical centering */
+    align-items: center;
+    /* horizontal centering */
     min-height: 100vh;
-    padding: 50px 0;         /* optional spacing */
+    padding: 50px 0;
+    /* optional spacing */
 }
 
 
@@ -269,117 +273,130 @@ section {
 
 /* Figma */
 .figma {
-    position: relative;
-    border: 2px solid #a259ff; /* keep your original border */
+
+    box-shadow:
+        inset 0 0 20px 3px rgb(161, 89, 255),
+        /* INSIDE */
+
+        0 0 40px 4px rgba(162, 89, 255, 0.7);
+    /* OUTSIDE */
 }
 
-.figma::before {
-    content: "";
-    position: absolute;
-    inset: -2px;              /* same as border width */
-    border: 2px solid #a259ff;
-    filter: blur(6px);        /* blur ONLY the border */
-    pointer-events: none;
-}
 
 /* Power Apps */
 .powerapps {
-    border: 2px solid #742774;
+    box-shadow:
+        inset 0 0 20px 3px rgb(226, 45, 250),
+        /* INSIDE */
+
+        0 0 40px 4px rgba(226, 45, 250, 0.6);
 }
 
-.powerapps::before {
-    background: #74277400;
-}
+
 
 /* HTML */
 .html {
-    border: 2px solid #f06529;
+    box-shadow:
+        inset 0 0 20px 3px rgb(230, 107, 40),
+        /* INSIDE */
+
+        0 0 40px 4px rgba(230, 107, 40, 0.601);
 }
 
-.html::before {
-    background: #f0652900;
-}
+
 
 /* CSS */
 .css {
-    border: 2px solid #2965f1;
+    box-shadow:
+        inset 0 0 20px 3px rgb(10, 88, 233),
+        /* INSIDE */
+
+        0 0 40px 4px rgba(10, 88, 233, 0.6);
 }
 
-.css::before {
-    background: #2965f100;
-}
+
 
 /* Bootstrap */
 .bootstrap {
-    border: 2px solid #7952b3;
+    box-shadow:
+        inset 0 0 20px 3px rgb(161, 89, 255),
+        /* INSIDE */
+
+        0 0 40px 4px rgba(162, 89, 255, 0.7);
 }
 
-.bootstrap::before {
-    background: #7952b300;
-}
 
 /* Tailwind */
 .tailwind {
-    border: 2px solid #38bdf8;
+    box-shadow:
+        inset 0 0 20px 3px rgb(34, 156, 238),
+        /* INSIDE */
+
+        0 0 40px 4px rgba(34, 156, 238, 0.6);
 }
 
-.tailwind::before {
-    background: #38bff800;
-}
 
 /* JavaScript */
 .javascript {
-    border: 2px solid #f7df1e;
+    box-shadow:
+        inset 0 0 20px 3px rgb(200, 219, 25),
+        /* INSIDE */
+
+        0 0 40px 4px rgba(162, 89, 255, 0.7);
 }
 
-.javascript::before {
-    background: #f7de1e00;
-}
+
 
 /* React */
 .react {
-    border: 2px solid #61dafb;
+    box-shadow:
+        inset 0 0 20px 3px rgb(7, 143, 206),
+        /* INSIDE */
+
+        0 0 40px 4px rgba(7, 143, 206, 0.6);
 }
 
-.react::before {
-    background: #61dafb00;
-}
 
 /* PHP */
 .php {
-    border: 2px solid #8993be;
+    box-shadow:
+        inset 0 0 20px 3px rgb(43, 157, 233),
+        /* INSIDE */
+
+        0 0 40px 4px rgba(43, 157, 233, 0.6);
 }
 
-.php::before {
-    background: #8993be00;
-}
 
 /* Laravel */
 .laravel {
-    border: 2px solid #ff2d20;
-}
+    box-shadow:
+        inset 0 0 20px 3px rgb(255, 0, 0),
+        /* INSIDE */
 
-.laravel::before {
-    background: #ff2b2000;
+        0 0 40px 4px rgba(255, 0, 0, 0.6);
 }
 
 /* MySQL */
 .mysql {
-    border: 2px solid #00758f;
+    box-shadow:
+        inset 0 0 20px 3px rgb(252, 187, 7),
+        /* INSIDE */
+
+        0 0 40px 4px rgba(252, 187, 7, 0.704);
 }
 
-.mysql::before {
-    background: #00758f00;
-}
+
 
 /* Python */
 .python {
-    border: 2px solid #ffd43b;
+    box-shadow:
+        inset 0 0 20px 3px rgb(52, 154, 255),
+        /* INSIDE */
+        0 0 40px 4px rgba(255, 252, 52, 0.572);
+    /* OUTSIDE */
 }
 
-.python::before {
-    background: #ffd53b00;
-}
+
 
 /* skill end */
 
@@ -390,48 +407,80 @@ section {
 .experience {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* vertical centering */
-    align-items: center;     /* horizontal centering */
+    justify-content: center;
+    /* vertical centering */
+    align-items: center;
+    /* horizontal centering */
     min-height: 100vh;
     padding: 20px;
     box-sizing: border-box;
-    gap: 40px;               /* space between heading and cards */
+    gap: 40px;
+    /* space between heading and cards */
 }
 
 /* Cards container */
 .experience-section {
     display: flex;
-    flex-direction: column;  /* stack cards vertically */
-    align-items: center;     /* center horizontally */
-    gap: 30px;               /* space between cards */
+    flex-direction: column;
+    /* stack cards vertically */
+    align-items: center;
+    /* center horizontally */
+    gap: 30px;
+    /* space between cards */
     width: 100%;
 }
 
 /* Individual cards */
 .card {
+    position: relative;
+    /* needed for pseudo-element */
     width: 550px;
-    max-width: 100%;         /* responsive */
+    max-width: 100%;
     height: 250px;
-    border: 1px solid white;
-    background: #19626D;
+    background: linear-gradient(80.17deg, rgba(25, 98, 109, 0.53) 30.83%, rgba(114, 172, 180, 0.53) 100%);
     mix-blend-mode: hard-light;
     box-shadow: 0px 40px 100px #121414;
     border-radius: 17px;
-    box-sizing: border-box;
     padding: 50px 60px;
     display: flex;
-    flex-direction: column;  /* title on top, content below */
-    justify-content: center; /* vertical alignment inside card */
-    gap: 20px;               /* spacing between title and content */
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    z-index: 0;
+    /* ensure pseudo-element is behind */
+
 }
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* cover whole card */
+    border-radius: 17px;
+    /* match card corners */
+    padding: 2px;
+    /* thickness of border */
+    background: linear-gradient(45deg, #B5AFAF, #827D7D, #B5AFAF);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: -1;
+}
+
 
 /* Flex wrapper inside each card */
 .experienced {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 130px;              /* spacing between company info and exp-block */
-    flex-wrap: wrap;         /* wrap on smaller screens */
+    gap: 130px;
+    /* spacing between company info and exp-block */
+    flex-wrap: wrap;
+    /* wrap on smaller screens */
+
 }
 
 /* Experience block (time + icon) */
@@ -440,10 +489,14 @@ section {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-color: #00758f;
-    border: 1px solid #ffffff87;
+    background;
+    linear-gradient(60.83deg, #114A52 47.97%, #097280 74.31%, #6AA6AE 96.02%);
+
+    border: 1px solid rgba(184, 227, 233, 0.21);
+    box-shadow: 0px 7px 65px #ebebeb;
     border-radius: 100px 10px 10px 100px;
-    padding: 10px 15px;
+
+    padding: 11px 16px;
 }
 
 /* Text inside exp-block */
@@ -472,12 +525,14 @@ section {
 @media (max-width: 650px) {
     .experienced {
         flex-direction: column;
-        gap: 20px;               /* reduce gap on small screens */
+        gap: 20px;
+        /* reduce gap on small screens */
     }
 
     .card {
         padding: 30px 20px;
-        height: auto;            /* flexible height */
+        height: auto;
+        /* flexible height */
     }
 }
 
@@ -573,7 +628,7 @@ section {
     background: linear-gradient(224.68deg, #4F7C82 0.91%, #073136 100%);
     border: 1px solid #B8E3E9;
     border-radius: 10px;
-    width:360px;
+    width: 360px;
     height: 290px;
     left: 928px;
     top: 3238px;
@@ -622,7 +677,7 @@ contact start */
 
 /* CONTACT SECTION */
 
-.contacted{
+.contacted {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -630,14 +685,14 @@ contact start */
     color: #e9fbfd;
 }
 
-.contact-list{
+.contact-list {
     display: flex;
     flex-direction: column;
     gap: 26px;
 }
 
 
-.contact-item{
+.contact-item {
     display: flex;
     align-items: center;
     gap: 18px;
@@ -645,7 +700,7 @@ contact start */
 }
 
 
-.contact-item i{
+.contact-item i {
     font-size: 22px;
     color: #c9f3f6;
     opacity: 0.9;
