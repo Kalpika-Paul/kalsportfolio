@@ -7,9 +7,10 @@
     <title>Kalpika Paul</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="cdn.jsdelivr.net">
+    <link rel="stylesheet" href="cdn.jsdelivr.net">
 
     <link rel="stylesheet" href="style.css">
+    
     <script src="https://kit.fontawesome.com/b1b3bfa8c2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
@@ -47,11 +48,11 @@
         <header class="header">
             <div class="row">
                 <div class="col-6">
-        
+
                     <div class="headline mb-5">
                         <p>Exploring ideas, Building experiences, Open to opportunities</p>
                     </div>
-        
+
                     <div class="introduction">
                         <h2>Hi, It's <span style="font-weight: 800; color: aquamarine;"> Kalpika Paul</span></h2>
                         <h1>Web Developer | UI/UX Designer</h1>
@@ -59,20 +60,20 @@
                             Focused on creating meaningful digital experiences through thoughtful design and clean code.
                         </p>
                     </div>
-        
+
                     <div class="icon">
                         <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href=""><i class="fa-brands fa-github"></i></a>
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                     </div>
-        
+
                     <div class="cvbtn mt-5">
                         <a href="" class="rbutton">Resume</a>
                     </div>
-        
+
                 </div>
-        
+
                 <div class="col-6 image-col">
                     <div class="image-stack">
                         <div class="rect rect-1"></div>
@@ -82,7 +83,7 @@
                 </div>
             </div>
         </header>
-        
+
         <!-- intro end -->
 
         <!-- ---------------------------
@@ -91,15 +92,24 @@
 ---------------------------
 --------------------------- -->
 
-<!-- skill start (Technology stack)  -->
+        <!-- skill start (Technology stack)  -->
 
         <section id="skills" class="skill">
             <h2 class="heads">TECHNOLOGY STACK</h2>
-
-            <div class="row justify-content-center g-5">
-
-                <!-- Row 1 -->
-                <div class="col-lg-3 col-md-4 col-sm-6">
+        
+            <!-- FILTER BUTTONS -->
+            <div class="skill-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ui">UI</button>
+                <button class="filter-btn" data-filter="framework">Framework</button>
+                <button class="filter-btn" data-filter="programming">Programming</button>   
+                <button class="filter-btn" data-filter="database">Database</button>
+            </div>
+        
+            <div class="row justify-content-center g-5 mt-4">
+        
+                <!-- UI -->
+                <div class="col-lg-3 col-md-4 col-sm-6 skill-item ui">
                     <div class="skill-card">
                         <div class="skill-ring figma">
                             <img src="img/figma.png" alt="Figma">
@@ -107,8 +117,8 @@
                         <p class="skill-name">Figma</p>
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
+        
+                <div class="col-lg-3 col-md-4 col-sm-6 skill-item ui">
                     <div class="skill-card">
                         <div class="skill-ring powerapps">
                             <img src="img/PowerApps_256x256.webp" alt="Power Apps">
@@ -116,8 +126,9 @@
                         <p class="skill-name">Microsoft Power Apps</p>
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
+        
+                <!-- Programming -->
+                <div class="col-lg-3 col-md-4 col-sm-6 skill-item programming">
                     <div class="skill-card">
                         <div class="skill-ring html">
                             <img src="img/htmloi-removebg-preview.png" alt="HTML">
@@ -125,8 +136,8 @@
                         <p class="skill-name">HTML</p>
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
+        
+                <div class="col-lg-3 col-md-4 col-sm-6 skill-item programming">
                     <div class="skill-card">
                         <div class="skill-ring css">
                             <img src="img/iuysrtyio-removebg-preview (1).png" alt="CSS">
@@ -134,27 +145,8 @@
                         <p class="skill-name">CSS</p>
                     </div>
                 </div>
-
-                <!-- Row 2 -->
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="skill-card">
-                        <div class="skill-ring bootstrap">
-                            <img src="img/bootstrap.png" alt="Bootstrap">
-                        </div>
-                        <p class="skill-name">Bootstrap</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="skill-card">
-                        <div class="skill-ring tailwind">
-                            <img src="img/tailwind-removebg-preview.png" alt="Tailwind">
-                        </div>
-                        <p class="skill-name">Tailwind</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
+        
+                <div class="col-lg-3 col-md-4 col-sm-6 skill-item programming">
                     <div class="skill-card">
                         <div class="skill-ring javascript">
                             <img src="img/javascript-removebg-preview.png" alt="JavaScript">
@@ -162,18 +154,8 @@
                         <p class="skill-name">JavaScript</p>
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="skill-card">
-                        <div class="skill-ring react">
-                            <img src="img/react-removebg-preview.png" alt="React">
-                        </div>
-                        <p class="skill-name">React</p>
-                    </div>
-                </div>
-
-                <!-- Row 3 -->
-                <div class="col-lg-3 col-md-4 col-sm-6">
+        
+                <div class="col-lg-3 col-md-4 col-sm-6 skill-item programming">
                     <div class="skill-card">
                         <div class="skill-ring php">
                             <img src="img/php-removebg-preview.png" alt="PHP">
@@ -181,26 +163,8 @@
                         <p class="skill-name">PHP</p>
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="skill-card">
-                        <div class="skill-ring laravel">
-                            <img src="img/laravel-removebg-preview.png" alt="Laravel">
-                        </div>
-                        <p class="skill-name">Laravel</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="skill-card">
-                        <div class="skill-ring mysql">
-                            <img src="img/sql-removebg-preview (1).png" alt="MySQL">
-                        </div>
-                        <p class="skill-name">MySQL</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
+        
+                <div class="col-lg-3 col-md-4 col-sm-6 skill-item programming">
                     <div class="skill-card">
                         <div class="skill-ring python">
                             <img src="img/python-removebg-preview.png" alt="Python">
@@ -208,10 +172,57 @@
                         <p class="skill-name">Python</p>
                     </div>
                 </div>
-
+        
+                <!-- Framework -->
+                <div class="col-lg-3 col-md-4 col-sm-6 skill-item framework">
+                    <div class="skill-card">
+                        <div class="skill-ring bootstrap">
+                            <img src="img/bootstrap.png" alt="Bootstrap">
+                        </div>
+                        <p class="skill-name">Bootstrap</p>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-4 col-sm-6 skill-item framework">
+                    <div class="skill-card">
+                        <div class="skill-ring tailwind">
+                            <img src="img/tailwind-removebg-preview.png" alt="Tailwind">
+                        </div>
+                        <p class="skill-name">Tailwind</p>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-4 col-sm-6 skill-item framework">
+                    <div class="skill-card">
+                        <div class="skill-ring react">
+                            <img src="img/react-removebg-preview.png" alt="React">
+                        </div>
+                        <p class="skill-name">React</p>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-4 col-sm-6 skill-item framework">
+                    <div class="skill-card">
+                        <div class="skill-ring laravel">
+                            <img src="img/laravel-removebg-preview.png" alt="Laravel">
+                        </div>
+                        <p class="skill-name">Laravel</p>
+                    </div>
+                </div>
+        
+                <!-- Database -->
+                <div class="col-lg-3 col-md-4 col-sm-6 skill-item database">
+                    <div class="skill-card">
+                        <div class="skill-ring mysql">
+                            <img src="img/sql-removebg-preview (1).png" alt="MySQL">
+                        </div>
+                        <p class="skill-name">MySQL</p>
+                    </div>
+                </div>
+        
             </div>
         </section>
-
+        
         <!-- skill end -->
 
         <!-- ---------------------------
@@ -225,53 +236,54 @@
         <section id="experinces" class="experience">
             <h2 class="heads">EXPERIENCE</h2>
             <div class="experience-section">
-
+        
                 <!-- Card 1 -->
-                <div class="card mb-4">
+                <div class="card fade-item mb-4">
                     <h1 class="job-title mb-4" style="color: #B8E3E9;font-weight: 600;">Web Developer</h1>
-
+        
                     <div class="experienced">
                         <div class="exp-text">
                             <p class="text-light">T-Series Solutions</p>
                             <hr>
                             <p style="color: #ffffff86;">Employee</p>
                         </div>
-
+        
                         <div class="exp-block">
                             <div class="clock">
                                 <i class="fa-regular fa-clock mt-1"></i>
                             </div>
                             <div class="text">
-                                <p> <span style="font-weight: 700; font-size: 15px; color: #CDE8EC;">1+ Years</span><br><span
-                                        style="font-size: 12px;font-weight: 300;color: #B8E3E9;">Experience</span> </p>
+                                <p> <span style="font-weight: 700; font-size: 15px; color: #CDE8EC;">1+ Years</span><br>
+                                    <span style="font-size: 12px;font-weight: 300;color: #B8E3E9;">Experience</span> </p>
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <!-- Card v -->
-                <div class="card">
+        
+                <!-- Card 2 -->
+                <div class="card fade-item">
                     <h1 class="job-title mb-4" style="color: #B8E3E9;font-weight: 600;">Web Developer</h1>
-
+        
                     <div class="experienced">
                         <div class="exp-text">
                             <p class="text-light">Trends Bird Limited</p>
                             <hr>
                             <p style="color: #ffffff86;">Intern</p>
                         </div>
-
+        
                         <div class="exp-block">
                             <div class="clock">
                                 <i class="fa-regular fa-clock mt-1"></i>
                             </div>
                             <div class="text">
-                                <p> <span style="font-weight: 700; font-size: 15px; color: #CDE8EC;">3 Months</span><br><span
-                                        style="font-size: 12px;font-weight: 300; color:#B8E3E9;">Internship</span> </p>
+                                <p> <span style="font-weight: 700; font-size: 15px; color: #CDE8EC;">3 Months</span><br>
+                                    <span style="font-size: 12px;font-weight: 300; color:#B8E3E9;">Internship</span> </p>
                             </div>
                         </div>
                     </div>
-
                 </div>
+        
+            </div>
         </section>
 
         <!-- experience end -->
@@ -288,52 +300,43 @@
             <h2 class="heads">EDUCATION</h2>
 
             <div class="edu">
-                <div class="edu1">
-                    <div class="edubox mb-5">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
 
-                    <div class="eduinfo">
-                        <h3>BSc in CSE</h3>
-                        <p class="bordered"></p>
-                        <h5>Independent University, Bangladesh</h5>
+                <!-- LEFT -->
+                <div class="edu-row left">
+                    <div class="edu-item">
+                        <h2 style="color: #B8E3E9; font-weight: 800;">BSc in CSE</h2>
+                        <p style="color: aliceblue;">Independent University, Bangladesh
+                        <p>
+                        <p class="location" style="text-align: center;"> <i
+                                class="fa-solid fa-location-crosshairs"></i>&nbsp;Dhaka</p>
                     </div>
-                    <div class="edudist">
-                        <h4 class="mt-2"><i class="bi bi-geo-alt"></i> Dhaka</h4>
+                    <span class="node"><i class="fa-solid fa-graduation-cap"></i></span>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="edu-row right">
+                    <span class="node"> <i class="fa-solid fa-certificate"></i></span>
+                    <div class="edu-item">
+                        <h2 style="color: #B8E3E9; font-weight: 800;">HSC</h2>
+                        <p style="color: aliceblue;">Govt. Shahid Bulbul College</p>
+                        <p class="location"><i class="fa-solid fa-location-crosshairs"></i> &nbsp;Pabna</p>
                     </div>
                 </div>
-                <div class="edu2">
-                    <div class="edubox mb-5">
-                        <i class="fa-solid fa-certificate"></i>
-                    </div>
 
-                    <div class="eduinfo">
-                        <h3>HSC</h3>
-                        <p class="bordered"></p>
-                        <h5>Govt. Shahid Bulbul College</h5>
+                <!-- LEFT -->
+                <div class="edu-row left">
+                    <div class="edu-item">
+                        <h2 style="color: #B8E3E9; font-weight: 800;">SSC</h2>
+                        <p style="color: aliceblue;">Pabna Govt. Girls High School</p>
+                        <p class="location"><i class="fa-solid fa-location-crosshairs"></i> &nbsp;Pabna</p>
                     </div>
-                    <div class="edudist">
-                        <h4 class="mt-2"><i class="bi bi-geo-alt"></i> Pabna</h4>
-                    </div>
+                    <span class="node"> <i class="fa-solid fa-book-bookmark"></i></span>
                 </div>
-                <div class="edu3">
-                    <div class="edubox mb-5">
-                        <i class="fa-solid fa-book-bookmark"></i>
-                    </div>
 
-                    <div class="eduinfo">
-                        <h3>SSC</h3>
-                        <p class="bordered"></p>
-                        <h5>Govt. Girls High School</h5>
-                    </div>
-                    <div class="edudist">
-                        <h4 class="mt-2"><i class="bi bi-geo-alt"></i> Pabna</h4>
-                    </div>
-                </div>
             </div>
-
-
         </section>
+
+
         <!-- education end -->
 
         <!-- ---------------------------
@@ -361,13 +364,13 @@
                                 </span>
                                 <br>
                                 <span style="font-size: 12px;color: #B8E3E9; ">
-                                        Consultancy Info based project
+                                    Consultancy Info based project
                                 </span>
-                            
+
                             </p>
                         </div>
-                        <div class="pbtn ">
-                              <a href="https://www.goldsunglobal.com/" class="btn" target="_blank">View</a>
+                        <div>
+                            <a href="https://www.goldsunglobal.com/" class="btn pbtn" target="_blank">View</a>
                         </div>
                     </div>
                 </div>
@@ -385,13 +388,13 @@
                                 </span>
                                 <br>
                                 <span style="font-size: 12px;color: #B8E3E9; ">
-                                        An E-Commerce project
+                                    An E-Commerce project
                                 </span>
-                            
+
                             </p>
                         </div>
-                        <div class="pbtn ">
-                              <a href="https://rsbstar.com/" class="btn " target="_blank">View</a>
+                        <div>
+                            <a href="https://rsbstar.com/" class="btn pbtn" target="_blank">View</a>
                         </div>
                     </div>
                 </div>
@@ -408,13 +411,13 @@
                                 </span>
                                 <br>
                                 <span style="font-size: 12px;color: #B8E3E9; ">
-                                     Mechanical Equipment info project
+                                    Mechanical Equipment info project
                                 </span>
-                            
+
                             </p>
                         </div>
-                        <div class="pbtn ">
-                              <a href="https://ede-bd.com/" class="btn " target="_blank">View</a>
+                        <div>
+                            <a href="https://ede-bd.com/" class="btn pbtn" target="_blank">View</a>
                         </div>
                     </div>
                 </div>
@@ -432,13 +435,13 @@
                                 </span>
                                 <br>
                                 <span style="font-size: 12px;color: #B8E3E9; ">
-                                        Agrovet based project
+                                    Agrovet based project
                                 </span>
-                            
+
                             </p>
                         </div>
-                        <div class="pbtn ">
-                              <a href="https://www.bonafideltd.com/" class="btn " target="_blank">View</a>
+                        <div>
+                            <a href="https://www.bonafideltd.com/" class="btn pbtn" target="_blank">View</a>
                         </div>
                     </div>
                 </div>
@@ -451,17 +454,17 @@
 
                             <p class="pname mt-2">
                                 <span style="font-size: 20px; font-weight: 400;color: #B8E3E9;">
-                                   Resort Site
+                                    Resort Site
                                 </span>
                                 <br>
                                 <span style="font-size: 12px;color: #B8E3E9; ">
-                                       Resort based project
+                                    Resort based project
                                 </span>
-                            
+
                             </p>
                         </div>
-                        <div class="pbtn ">
-                              <a href="https://mrr-properties.com/" class="btn " target="_blank">View</a>
+                        <div>
+                            <a href="https://mrr-properties.com/" class="btn pbtn" target="_blank">View</a>
                         </div>
                     </div>
                 </div>
@@ -478,59 +481,60 @@
                                 </span>
                                 <br>
                                 <span style="font-size: 12px;color: #B8E3E9; ">
-                                        A E-Commerce project
+                                    A E-Commerce project
                                 </span>
-                            
+
                             </p>
                         </div>
-                        <div class="pbtn ">
-                              <a href="https://labfairtrading.com/" class="btn " target="_blank">View</a>
+                        <div>
+                            <a href="https://labfairtrading.com/" class="btn pbtn " target="_blank">View</a>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </section>
 
 
         <!-- project end -->
 
-                <!-- ---------------------------
+        <!-- ---------------------------
 ---------------------------
 ---------------------------
 ---------------------------
 --------------------------- -->
 
-<!-- contact start -->
+        <!-- contact start -->
 
-<section id="contact" class="contacted">
-    <h2 class="heads">CONTACT</h2>
+        <section id="contact" class="contacted">
+            <h2 class="heads">CONTACT</h2>
 
-    <div class="contact-list">
-        <div class="contact-item">
-            <i class="bi bi-envelope"></i>
-            <span>kalpikapaul.71@gmail.com</span>
-        </div>
+            <div class="contact-list">
+                <div class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    <span>kalpikapaul.71@gmail.com</span>
+                </div>
 
-        <div class="contact-item">
-            <i class="bi bi-telephone"></i>
-            <span>01779332887</span>
-        </div>
+                <div class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    <span>01779332887</span>
+                </div>
 
-        <div class="contact-item">
-            <i class="bi bi-geo-alt"></i>
-            <span>Central Road, Hatirpool</span>
-        </div>
+                <div class="contact-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Central Road, Hatirpool</span>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- contact end -->
+
+
     </div>
-</section>
 
-
-
-<!-- contact end -->
-
-
-    </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
